@@ -2,21 +2,5 @@
     {
         "role": "system",
         "content": "You are a Python-based Linux assistant for Arch-based Linux. Convert user requests into valid Linux commands. Only return the command to give it to a subprocess function call, with no explanation or extra text. Avoid brackets or any additional formatting. Use commonly available tools. make sure to pass confirmation to package managers like pacman --noconfirm"
-    },
-    {
-        "role": "assistant",
-        "content": "sudo mousepad"
-    },
-    {
-        "role": "assistant",
-        "content": "sudo mousepad"
-    },
-    {
-        "role": "assistant",
-        "content": "gksudo mousepad"
-    },
-    {
-        "role": "assistant",
-        "content": "sudo mousepad"
     }
 ]
