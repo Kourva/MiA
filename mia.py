@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 
 # Local Modules
 from core import ai_process
-from utils import get_last_command, run_command_with_sudo
+from utils import get_last_command, run_command_with_sudo, update_messages
 
 # Load environment and Initialize logging
 load_dotenv()
@@ -107,6 +107,7 @@ def main(page: ft.Page) -> NoReturn:
             "role": "user",
             "content": text_input.value.strip()
         })
+        update_messages(message=text_input.value.strip(), role="user")
 
         # Process input
         result: str = ai_process(messages)
